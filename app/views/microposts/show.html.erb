@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @micropost %>
+
+<div>
+  <%= link_to "Edit this micropost", edit_micropost_path(@micropost),class: " m-3 btn-outline-warning btn" %>
+  <%= link_to "Back to microposts", microposts_path,class: " m-3 btn-outline-primary btn" %>
+
+  <%= button_to "Destroy this micropost", @micropost, method: :delete,class: " m-3 btn-outline-danger btn" %>
+</div>
